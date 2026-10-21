@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lucareli coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>lucareli <span>coffee</span></h2>
+    <input id="busca" type="search" placeholder="buscar produtos">
+    <button id="abrir">carrinho (<span id="quantidade">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h1>seu café favorito</h1>
+      <p>cafés especiais, doces e bons momentos.</p>
+      <a href="#cardapio">ver cardápio</a>
+    </section>
+
+    <section id="cardapio">
+      <h2>nosso cardápio</h2>
+
+      <nav id="categorias">
+        <button data-cat="todos">todos</button>
+        <button data-cat="cafes">cafés</button>
+        <button data-cat="doces">doces</button>
+        <button data-cat="gelados">gelados</button>
+      </nav>
+
+      <div id="produtos" class="produtos"></div>
+    </section>
+  </main>
+
+  <aside id="carrinho" class="carrinho">
+    <button id="fechar">fechar</button>
+    <h2>seu pedido</h2>
+    <div id="itens"></div>
+    <h3>total: <span id="total">R$ 0,00</span></h3>
+    <button id="finalizar">pedir pelo whatsapp</button>
+  </aside>
+
+  <footer>
+    <p>lucareli coffee - feito com carinho.</p>
+  </footer>
+</body>
+</html>
